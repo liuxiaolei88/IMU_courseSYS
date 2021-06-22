@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="db" uuid="f7611777-2cda-43a9-a197-86305f1f047d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\liuxiaolei\Desktop\course_management_system-master\db.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite" uuid="12495d93-a0cf-4485-8b57-8fefd38326cb">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite [2]" uuid="86c77b65-3ff9-4448-be1a-f9766b766411">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite [3]" uuid="2481968b-2842-4fcb-b45d-ae168a56a8a8">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite [4]" uuid="f2936a6e-b01e-4058-98e0-af00d8a84e75">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:db.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>
