@@ -785,13 +785,30 @@ footer i {
 	}
 }
 
+/*patch begin*/
 
-/**************/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+
+/*Chrome 下去除type ==  "number"  时 的右侧图标*/
+.input-nonumber::-webkit-outer-spin-button,
+.input-nonumber::-webkit-inner-spin-button{
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+/*火狐 下去除type ==  "number"  时 的右侧图标*/
+input[type="number"] {-moz-appearance:textfield;}
+/*IE下去除 右边的×*/
+input::-ms-clear{display:none;}
+/*IE下去除 小眼睛*/
+#n3::-ms-reveal{display:none;}
+
+.login-title .logo{
+	wight:5em;
+	height:5em;
+	margin-bottom: 1em;
+	margin-right:1em;
 }
 
-input[type="number"] {
-	-moz-appearance: textfield;
-}
+/* .login-button > button{
+	padding: 0.3rem 1rem;
+    font-size: 1rem;
+} */
