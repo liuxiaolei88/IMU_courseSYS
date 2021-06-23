@@ -1,11 +1,12 @@
 {% extends 'bootstrap/base.html' %}
 
-{% block title %}学生选课系统账号登录{% endblock %}
+{% block title %}账号登录{% endblock %}
 
 {% block styles %}
 
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="../static/css/stisla.css">
+<link href="https://v4.bootcss.com/docs/4.3/examples/floating-labels/floating-labels.css" rel="stylesheet">
+<style>.input-nonumber::-webkit-inner-spin-button,.input-nonumber::-webkit-outer-spin-button{-webkit-appearance:none!important;margin:0}input[type=number]{-moz-appearance:textfield}#n3::-ms-reveal,input::-ms-clear{display:none}.login-title .logo{width:5em;height:5em;margin-bottom:1em;margin-right:1em}.login-button>button{padding:.3rem 1rem;font-size:1rem}.login-button>a{padding:.3rem 1rem;font-size:1rem}</style>
 {% endblock%}
 
   {% block content %}
@@ -15,7 +16,7 @@
       <div class="text-center mb-4"><br>
         <div class="login-title">
           <img class="logo" src="../static/img/imu-logo.png"></img>
-          <font size =6em><b>账号登录</b></font>
+          <font size =6em><b>学生登录</b></font>
         </div>
       </div>
       <br>
@@ -42,13 +43,13 @@
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="请输入您的密码" required>
       </div>
       <div class="checkbox mb-3">
-        <label><input type="checkbox" name="remember" style="margin-top: 1em;"> Remember me</label>
+        <label><input type="checkbox" name="remember" style="margin-top: 1em;"> 记住我</label>
       </div>
       <div class="login-button">
-        <button class="btn btn-lg btn-primary btn-block" type="submit" style="padding: 0.3rem 1rem;font-size: 1rem;">学生登陆</button>
-        <a class="btn btn-lg btn-primary btn-block" href="{{ url_for('admin') }}" style="padding: 0.3rem 1rem;font-size: 1rem;">教师登录</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">学生登陆</button>
+        <a class="btn btn-lg btn-primary btn-block" href="{{ url_for('admin') }}">后台管理</a>
       </div>
-      <p class="mt-5 mb-3 text-muted text-center">内蒙古大学 © 2021 </p>
+      <p class="mt-5 mb-3 text-muted text-center"> <font size=1>内蒙古大学 © 2021</font> </p>
     </form>
   </div>
   </div>
