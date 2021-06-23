@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 
-{% block title %}后台管理系统{% endblock %}
+{% block title %}后台管理登录{% endblock %}
 
 {% block styles %}
     {{ super() }}
     <link href="https://v4.bootcss.com/docs/4.3/examples/floating-labels/floating-labels.css" rel="stylesheet">
+    <style>.input-nonumber::-webkit-inner-spin-button,.input-nonumber::-webkit-outer-spin-button{-webkit-appearance:none!important;margin:0}input[type=number]{-moz-appearance:textfield}#n3::-ms-reveal,input::-ms-clear{display:none}.login-title .logo{width:5em;height:5em;margin-bottom:1em;margin-right:1em}.login-button>button{padding:.3rem 1rem;font-size:1rem;margin-top: 3em; width: 226px;}.login-button>a{padding:.3rem 1rem;font-size:1rem}</style>
 {% endblock %}
 
 {% block navbar %}{% endblock %}
 
 {% block content %}
+
     <form action="/admin" method="POST"
           class="form-signin d-flex flex-column justify-content-center align-items-center">
         <div class="text-center mb-4">
             <br>
-            <h1><strong>后台管理系统</strong></h1>
+            <div class="login-title">
+                <img class="logo" src="../static/img/imu-logo.png"></img>
+                <font size =6em><b>管理员登录</b></font>
+              </div>
         </div>
         <br>
         {% with messages = get_flashed_messages() %}
@@ -28,20 +33,20 @@
         {% endwith %}
         <div class="form-label-group">
             <label for="inputText">账号</label>
-            <input type="number" name="username" id="inputText" class="form-control" placeholder="Username" required
-                   autofocus>
-
+            <input type="number" name="username" id="inputText" class="form-control" placeholder="请输入您的账号" required autofocus>
         </div>
 
         <div class="form-label-group">
             <br>
             <label for="inputPassword">密码</label>
-            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
-                   required>
+            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="请输入您的密码" required>
         </div>
         <br>
-        <button class="btn btn-lg btn-primary btn-block " style="width: 23%" type="submit">登陆</button>
-        <p class="mt-5 mb-3 text-muted text-center">内蒙古大学IMU</p>
+        <div class="login-button">
+            <button class="btn btn-lg btn-primary btn-block " type="submit">管理员登陆</button>
+            <a class="btn btn-lg btn-primary btn-block" href="{{ url_for('login') }}">返回</a>
+        </div>
+        <p class="mt-5 mb-3 text-muted text-center"> <font size=1>内蒙古大学 © 2021</font> </p>
     </form>
 {% endblock %}
 
